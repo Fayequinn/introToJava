@@ -1,6 +1,6 @@
 package oop.further;
 
-public class Vehicle {
+public abstract class Vehicle {
 
     private int id;
 
@@ -22,6 +22,8 @@ public class Vehicle {
         private String colour;
 
         private static String usedFor = "transport";
+
+        public abstract int calcBill();
 
     public Vehicle() {
         this.id = count++;

@@ -8,6 +8,11 @@ public class Plane extends Vehicle {
     }
 
     @Override
+    public int calcBill() {
+        return 300;
+    }
+
+    @Override
     public String toString() {
         return "Plane{" +
                 "propeller=" + propeller +

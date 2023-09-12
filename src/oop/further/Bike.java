@@ -8,6 +8,11 @@ public class Bike extends Vehicle{
     }
 
     @Override
+    public int calcBill() {
+        return 200;
+    }
+
+    @Override
     public String toString() {
         return "Bike{" +
                 "sidecar=" + sidecar +

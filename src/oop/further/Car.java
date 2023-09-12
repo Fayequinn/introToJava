@@ -9,6 +9,11 @@ public class Car extends Vehicle{
     }
 
     @Override
+    public int calcBill() {
+        return 100;
+    }
+
+    @Override
     public String toString() {
         return "Car{" +
                 "bootSize=" + bootSize +

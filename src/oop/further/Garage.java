@@ -44,18 +44,25 @@ public class Garage {
         this.vehicles.clear();
     }
 
-    public int calculateBill() {
+//    public int calculateBill() {
+//        int bill = 0;
+//        for (Vehicle v : this.vehicles) {
+//            if (v instanceof Car) {
+//                bill += 100;
+//            } else if (v instanceof Bike) {
+//                bill += 200;
+//            } else if (v instanceof Plane) {
+//                bill += 300;
+//            }
+//        }
+//        return bill;
+//    }
+
+    public int calculateBill(){
         int bill = 0;
-        for (Vehicle v : this.vehicles) {
-            if (v instanceof Car) {
-                bill += 100;
-            } else if (v instanceof Bike) {
-                bill += 200;
-            } else if (v instanceof Plane) {
-                bill += 300;
-            }
-        }
-        return bill;
+        for (Vehicle v :this.vehicles){
+            bill += v.calcBill();
+        } return bill;
     }
 
 

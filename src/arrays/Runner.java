@@ -5,6 +5,11 @@ public class Runner {
 //        Integer[] numbers = new Integer[90];
 //        for (int i=10; i<100; i++){
 //            numbers[i-10]=i;
+
+        NumberSplitter nS = new NumberSplitter();
+
+        System.out.println(nS.addDigits(74));
+
         }
 
 

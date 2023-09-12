@@ -52,7 +52,7 @@ public class Runner {
 
         System.out.println(garage.calculateBill());
 
-        garage.removeByType("car");
-        System.out.println(garage);
+//        garage.removeByType("car");
+//        System.out.println(garage);
     }
 }
