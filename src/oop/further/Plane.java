@@ -1,6 +1,6 @@
 package oop.further;
 
-public class Plane extends Vehicle {
+public class Plane extends Vehicle implements Flyable{
     private boolean propeller;
 
     public void setPropeller(boolean propeller) {
@@ -17,5 +17,9 @@ public class Plane extends Vehicle {
         return "Plane{" +
                 "propeller=" + propeller +
                 '}';
+    }
+
+    public void flyable(){
+        System.out.println("nyooom");
     }
 }

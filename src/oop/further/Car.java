@@ -4,6 +4,10 @@ public class Car extends Vehicle{
 
     private int bootSize;
 
+    public int getBootSize() {
+        return bootSize;
+    }
+
     public void setBootSize(int bootSize) {
         this.bootSize = bootSize;
     }
