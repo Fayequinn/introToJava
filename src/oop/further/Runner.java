@@ -1,5 +1,7 @@
 package oop.further;
 
+import java.util.Scanner;
+
 public class Runner {
 
     public static void main(String[] args) {
@@ -54,5 +56,19 @@ public class Runner {
 
 //        garage.removeByType("car");
 //        System.out.println(garage);
+
+        // when it's a checked exception, need to do try and catch
+//        try{
+//            garage.findById(6);}
+//        catch(VehicleNotFoundException vnfe){
+//            System.out.println(vnfe.getMessage());
+//        }
+
+        // the exception is now unchecked so the exception isn't handled
+        garage.findById(6);
+
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter a number");
     }
 }

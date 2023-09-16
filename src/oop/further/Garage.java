@@ -10,6 +10,14 @@ public class Garage {
         return this.vehicles.add(v);
     }
 
+    public Vehicle findById(int id) throws VehicleNotFoundException {
+        for (Vehicle v : this.vehicles){
+            if (v.getId() == id){
+    return v;
+            }
+        } throw new VehicleNotFoundException("No vehicle is found with id: "+id);
+    }
+
     public boolean removeVehicle(int id) {
         for (Vehicle v : this.vehicles) {
             if (v.getId() == id) {
@@ -62,7 +70,9 @@ public class Garage {
         int bill = 0;
         for (Vehicle v :this.vehicles){
             bill += v.calcBill();
-        } return bill;
+        }
+        System.out.println(bill);
+        return bill;
     }
 
 
@@ -73,6 +83,8 @@ public class Garage {
                 '}';
     }
 }
+
+
 
 
 //
